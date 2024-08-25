@@ -1,0 +1,15 @@
+#THIS IS A SIMPLE PROGRAM TO CHECK WHETHER A GIVEN YEAR IS A LEAP YEAR OR NOI!
+def leap_year(year):
+  if(year %4 == 0):
+    if(year %100 == 0):
+      if(year %400 == 0):
+        print("This is a leap year ")
+      else:
+        print("This is not a leap year ")
+    else:
+      print("This is a leap year ")
+  else:
+    print("This is not a leap year ")
+year = int(input("Enter the year"))
+leap_year(year)
+       
