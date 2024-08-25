@@ -1,0 +1,20 @@
+#HEY!BUDDY HOPE YOU CHECKS YOUR HEALTH REGULARLY
+#USE MY BMI CALCULATOR TO CHECK WHETHER YOUR WEIGHT IS IN ACCORDANCE WITH YOUR HEIIGHT!
+def BMI(weight, height):
+  return round(weight/(height*height),2)
+
+weight = float(input("Enter your weight in kg: "))
+height = float(input("Enter your height in m: "))
+a = BMI(weight, height)
+if(a < 18.5):
+  print("You are 'underweight' , Your BMI is",a)
+elif(a<25):
+  print("You are 'normal' , Your BMI is ",a)
+elif(a<30):
+  print("Your are 'overweight' , Your BMI is ",a)
+elif(a<35):
+  print("You are 'Obese' , Your BMI is ",a)
+else:
+  print("You are 'clinically Obese' , Your BMI is ",a)
+print("Thank You! for using our BMI calculator ")
+print("Stay Healthy!, Stay Young!")
